@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/specter.ogg-9da49070f51201a96082f3250c163ef5.oggstr"
+
+[deps]
+
+source_file="res://Audio/specter.ogg"
+dest_files=[ "res://.import/specter.ogg-9da49070f51201a96082f3250c163ef5.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

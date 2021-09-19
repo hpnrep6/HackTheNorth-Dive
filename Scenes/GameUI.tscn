@@ -1,0 +1,96 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://Scenes/GameUI.gd" type="Script" id=2]
+[ext_resource path="res://Images/Hp.png" type="Texture" id=3]
+[ext_resource path="res://Images/Core.png" type="Texture" id=4]
+[ext_resource path="res://Images/font.ttf" type="DynamicFontData" id=5]
+
+[sub_resource type="DynamicFont" id=1]
+size = 36
+font_data = ExtResource( 5 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 50
+font_data = ExtResource( 5 )
+
+[node name="UI" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+margin_left = 61.3182
+margin_top = 6.38655
+margin_right = 247.318
+margin_bottom = 51.3866
+custom_fonts/normal_font = SubResource( 1 )
+text = "300"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="."]
+margin_left = 60.8978
+margin_top = 55.1585
+margin_right = 246.898
+margin_bottom = 100.159
+custom_fonts/normal_font = SubResource( 1 )
+text = "300"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Core" type="Sprite" parent="HBoxContainer"]
+position = Vector2( 25.4239, 74.9152 )
+scale = Vector2( 0.461006, 0.465461 )
+texture = ExtResource( 4 )
+
+[node name="Hp" type="Sprite" parent="HBoxContainer"]
+position = Vector2( 25.7087, 28.0023 )
+scale = Vector2( 0.445626, 0.445626 )
+texture = ExtResource( 3 )
+
+[node name="End" type="Control" parent="."]
+visible = false
+margin_right = 40.0
+margin_bottom = 40.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect" type="ColorRect" parent="End"]
+margin_right = 2817.0
+margin_bottom = 1814.0
+color = Color( 0, 0, 0, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RichTextLabel" type="RichTextLabel" parent="End"]
+anchor_left = 25.6
+anchor_top = 15.0
+anchor_right = 25.6
+anchor_bottom = 15.0
+margin_left = -1006.0
+margin_top = -586.0
+margin_bottom = -6.10352e-05
+grow_horizontal = 2
+grow_vertical = 2
+custom_fonts/normal_font = SubResource( 2 )
+text = "You were unable to
+protect the glowing ball..."
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
